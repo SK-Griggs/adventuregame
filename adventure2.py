@@ -128,7 +128,7 @@ def levelseven():
 
     elif choice.lower().strip() =="audience":
         print("So you don't want to choose based on genre. Are there certain books that you definitely don't want to read?")
-        #levelnine()
+        levelnine()
 
 def leveleight():
     print(first_name, "You've had some time. Do you want to stick with fantasy or do you want to try something else?")
@@ -136,11 +136,11 @@ def leveleight():
 
     if choice.lower().strip() == "fantasy":
         print("I have five titles that you can pick from. At this point, it might be easier to pick based on the audience. ")
-        #levelten
+        levelten()
 
     elif choice.lower().strip() =="different":
         print("If you take away the romance and fantasy, that takes out 7 titles. ")
-        #leveleleven
+        #leveleleven()
 
 def levelnine():  
     print("So picking based on genre isn't helping. Let's focus on audience.")
@@ -155,10 +155,57 @@ def levelnine():
 
     elif choice.lower().strip() == "else":
         print("Unfortunately that only eliminated 1 title.  Let's see if we can narrow it down some more. ")
-        #levelthirteen
+        #leveltwelve()
 
+def levelten():
+    print(first_name, "So, you definitely want to stick with fantasy. And you are not interested in anything with romance as a focus.")
+    choice = input("I have 5 fantasy titles that you can pick from, do you want to read an adult fantasy or a younger audience? [adult/younger] \n")
+
+    if choice.lower().strip() == "adult":
+        print("I only have one adult fantasy in my recommendations. It's the Blood Trials.  ")
+        print(df.loc[[4]])
+        print("The Blood Trials is about Ikenna who has secret blood magic and has been secretly learning martial skills. When she learns about her grandfather's death, she risks her life to particiapte in the trials. ")
+        print ("She knows that his death wasn't natural and once she finds the killer she wants revenge.")
+        playagain()
+
+        
+    elif choice.lower().strip() =="younger":
+        print("There are still three titles to choose from. We need to narrow it down some more. ")
+        levelthirteen()
        
+def leveleleven():
+    print(first_name, "You don't want fantasy or romance. That leaves four other genres to pick from. ")
+    choice = input("Do you want to read nonfiction or fiction? [nonfiction/fiction] \n")
 
+    if choice.lower().strip() == "nonfiction":
+        print("I have five titles that you can pick from. At this point, it might be easier to pick based on the audience. ")
+        
+
+    elif choice.lower().strip() =="fiction":
+        print("If you take away the romance and fantasy, that takes out 7 titles. ")
+      
+
+def levelthirteen():
+    print(first_name, "I guess now you have to decide if you want to read middle grade or young adult?")
+    choice = input("Do you want to read something young adult or middle grade? [young/middle] \n")
+
+    if choice.lower().strip() == "middle":
+        print("There is only one middle grade in my recommendations. It's Pilar Ramirez and the Escape From Zafa.  ")
+        print(df.loc[[7]])
+        print("Pilar Ramirez is about 12 year old Pilar who is dealing with a lot of change that she is not happy about. She is sucked into a blank page that leads her to the unknown world of Zafa. ")
+        print("WHile here, Pilar finds her Abuela's cousin who has been missing for fifty years. She has to face the Domincan Boogeyman to free her cousin and to find her way home.  ")
+        playagain()
+
+    elif choice.lower().strip() =="young":
+        print("I have three young adult fantasies that you may be interested in.  ")
+        print("My first recommendation is one that I hear you have wanted to read for a while. It's Not Even Bones. ")
+        print(df.loc[[2]])
+        print("Not Even Bones is about Nita who dissects the bodies of the supernaturals that her mother kills. She aslso has nothing to do with selling their body parts on the black market. ")
+        print("Until her mom brings home a live speciman. Nita (who is not exactly human)wants out. When she rescues the boy she finds herself being sold in his place. To escape, she may have to become the worst kind of monster. ")
+        print("Next, there is  She Who Rides the Storm.")
+        print(df.loc[[3]])
+        print("She Who Rides the Storm is about four teenagers, a high stakes heist and a cursed sword of a shapeshifter. ")
+        playagain()
 
 
 
