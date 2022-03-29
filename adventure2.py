@@ -165,12 +165,16 @@ def levelten():
 
     if choice.lower().strip() == "nonfiction":
         print("There is only one nonfiction title that I have to recommend. If I am not mistaken, you read the first book and already have plans to read this one. ")
+        print("I picked  Beyond the Body Farm")
+        print(df.loc[[16]])
+        print("Beyond the Body Farm is the second book where Dr. Bass and Jon Jefferson comes together to look st some of the forensic cases and the technology and methods used to solve crimes. ")
+        print("This goes further then Dr. Bass' pioneering efforts in creating the body farm.")
+        playagain()
 
-        
 
     elif choice.lower().strip() =="fiction":
-        print("If you take away the romance and fantasy, that takes out 7 titles. ")
-        #leveltwelve()
+        print("That leaves eight titles from. Let's see if can narrow the list down  some more.  ")
+        leveltwelve()
       
 
 def leveleleven():
@@ -195,16 +199,71 @@ def leveleleven():
         print("She Who Rides the Storm is about four teenagers, a high stakes heist and a cursed sword of a shapeshifter. ")
         playagain()
 
+def leveltwelve():
+    print(first_name, "Working with only fiction genres, there is still a variety to pick from. It depends on whether you want to stick with speculative fiction or move on to something else.  ")
+    choice = input("Do you want to read speculative fiction or more realitic fiction? [speculative/realistic] \n")
+
+    if choice.lower().strip() == "speculative":
+        print("That leaves two science fiction titles to choose from.  ")
+        print("I think you'll like The First Sister. ")
+        print(df.loc[[9]])
+        print("The First Sister has been referenced as being The Handmaid's Tale in space. First Sister has no name and no voice. When her captain changes his mind and leaves her on the ship, she is tasked with the job of spying on the new captain. ")
+        print("This becomes difficult when she falls in love with her.")
+        print("The next one I'd recommend is Chilling Effect. ")
+        print(df.loc[[10]])
+        print("A space opera with psychic cats. Do you need to know more than that? Okay fine, it's about Captain Eva Innocente is forced into completely a series of dangerous missions by a shadowy syndicate who has kidnapped her sister. ")
+        print("Oh, she also has to deal with an emperor who wants her dead, the psychic cats in her cargo hold and a crewmate who is making her feel things. ")
+        playagain()
 
 
+    elif choice.lower().strip() =="fiction":
+        print("The rest are similar but different enough to separate into different categories.  ")
+        levelthirteen()
 
+def levelthirteen():
+    print(first_name, "I guess this means you want to get away from all of the speculative things. Your reading mood has changed completely. Awesome! Let's try to knock out some books that you've been meaning to get to. ")
+    print("Yes, I know that its creepy but I cheated and looked at your TBR lists. ")
+    choice = input("Do you want to read something historical or contemporary? [historical/contemporary] \n")
+
+    if choice.lower().strip() == "historical":
+        print("This is a historical mystery. It's Westside. it's about a young detective whose specialty is tiny mysteries. She finds herself in cauhgt up in a conspiracy involving the strange magic and stranger residents of Manhatten's Westside. ")
+        print(df.loc[[13]])
+        playagain()
+
+
+    elif choice.lower().strip() =="contemporary":
+        print("Now you  have to decide if you want to unravel a mystery or do you want something with a bit more action. ")
+        #levelfourteen()        
+
+
+def levelfourteen():
+    print(first_name, "Alright, so you appear to be in the mood for some mystery/thriller books. I guess it really depends on if you want to focus on mood or if you want to unravel something.  ")
+    choice = input("To clarify do you want a straight up mystery, or do you want something that plays with your mood and/or more action packed? [mystery/thriller] \n")
+
+    if choice.lower().strip() == "mystery":
+        print("I have three mysteries for you. Two are adult and one is a young adult title. ")
+        print(df.loc[[5]])
+        print("I picked Quiet in Her Bones because it's written by one of your favorite authors. I know that you tend to put these off because you  know you're going to like them. And yes, you're right that doesn't make any sense. ")
+        print("This book takes place in New Zealand and it is about a woman whose mother has been missing for ten years. Everyone thought she ran off with a quarter of a million dollars and left he husband. ")
+        print("But things change when her bones are found in a forest near her elite surburban neighborhood.")
+        print("My second pick for you is a retelling with a twist. Pride and Premeditation is a retelling of Pride and Prejudice wrapped up in a murder mystery. ")
+        print(df.loc[[11]])
+        print("Beneath the Stairs is a 2022 release that I thought you would like. ")
+        print(df.loc[[15]])
+        print("Clare returns to her  hometown when she finds out that her friend Abby has attempted suicide in the local haunted house. Twenty years before Clare and Abby went into the local haunted house, the scene of a gruesome murder. ")
+        print("They both came out of the house alive, but something had changed inside of Abby. Clare hopes to uncover the source of the darkness behind Abby's suicide attempt. ")
+        playagain()
+
+
+    elif choice.lower().strip() =="thriller":
+        print("I have two thrillers for you and they are both YA. One is more psychological and the other is more action oriented.   ")
+        print("Every Stolen Breath is about Lia who lost her dad in a mob attack known as The Swarm. It's a race against time when Lia becomes the swarm's next target. ")
+        print(df.loc[[8]])
+        print("Into the Sublime is about 4 teenage girls who are part of a thrill seeking group go to a Colorado lake called the Sublime, where legend says the lake is able to change things for those who risk and survive its depths. ")
+        print("Four goes in, but only three girls come out. Amelie Desmarais is willing to tell everything, but can she be believed? ")
+        print(df.loc[[6]])
+        playagain()
 
         
-        
-        
-    
-                 
-
-
 #game start below
 levelone()
