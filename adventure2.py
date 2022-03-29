@@ -40,7 +40,7 @@ def levelone():
       
 def leveltwo():
     print("There are so many places that you can find recommendations. It's all about preference, really.")
-    print("I think that we should narrow down the option, and since I've gotten to know you pretty well,", first_name, "I know that you are a browser.")
+    print("I think that we should narrow down the options, and since I've gotten to know you pretty well,", first_name, "I know that you are a browser.")
     print("I know it's not just the cover that gets your attention, it's the size, the feel and the smell of the book. I have two places in mind.")
     choice = input("Do you want to go to the bookstore or the library? [bookstore/library]  \n")
 
@@ -72,7 +72,7 @@ def levelthree():
 
 
 def levelfour():
-    print("Now we have to narrow down the list. Unless you want to take all sixtem books home with you. ")
+    print("Now we have to narrow down the list. Unless you want to take all sixteen books home with you. ")
     choice = input("Do you want to take all sixteen books home or do you want to narrow down the list? [all/narrow] \n")
 
     if choice.lower().strip() == "all":
@@ -132,11 +132,11 @@ def levelseven():
         playagain()
 
 def leveleight():
-    print(first_name, "You've had some time. Do you want to stick with fantasy or do you want to try something else?")
+    print(first_name, "You've had some time. I know that fantasy has your heart, but it's also okay to take breaks from it. ")
     choice = input("Do you want to read more fantasy or do you want to try something different? [fantasy/different] \n")
 
     if choice.lower().strip() == "fantasy":
-        print("I have five titles that you can pick from. At this point, it might be easier to pick based on the audience. ")
+        print("At this point, it might be easier to pick based on the audience. ")
         levelnine()
 
     elif choice.lower().strip() =="different":
