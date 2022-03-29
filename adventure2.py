@@ -3,7 +3,7 @@ first_name =input("What is your name?  ")
 
 #16 randomly selected titles to use for the game. 
 import pandas as pd
-df = pd.read_csv("cynb_selections.csv")
+df = pd.read_csv("cynb_selectionsA.csv")
 
 df.rename(columns={'Title ': 'title'}, inplace=True)
 df.rename(columns={'Author ': 'author'}, inplace=True)
@@ -127,8 +127,9 @@ def levelseven():
         leveleight()
 
     elif choice.lower().strip() =="audience":
-        print("So you don't want to choose based on genre. Are there certain books that you definitely don't want to read?")
-        levelnine()
+        print("I know that you think that you want to pick based on the audience. But if I was to ask you what you thought about young adult, I'm pretty sure that you'd say you weren't really interested in it.")
+        print("Or you would say that you're losing interent in it. But your shelves and lists say differently. I know, I peeked. Maybe you just need a break, and that's okay. ")
+        playagain()
 
 def leveleight():
     print(first_name, "You've had some time. Do you want to stick with fantasy or do you want to try something else?")
@@ -136,28 +137,13 @@ def leveleight():
 
     if choice.lower().strip() == "fantasy":
         print("I have five titles that you can pick from. At this point, it might be easier to pick based on the audience. ")
-        levelten()
+        levelnine()
 
     elif choice.lower().strip() =="different":
         print("If you take away the romance and fantasy, that takes out 7 titles. ")
-        #leveleleven()
+        levelten()
 
-def levelnine():  
-    print("So picking based on genre isn't helping. Let's focus on audience.")
-    print(df.audience)
-    choice = input("Do you want to read a middle grade or something else? [mg/else] \n") 
-
-    if choice.lower().strip() == "mg":
-        print("I have 1 title for you.  It's Pilar Ramirez and the Escape From Zara by Julian Randall. ")
-        print("Pilar Ramirez is about a young girl who is sucked into a magical world and discovers her missing cousin.")
-        print(df.loc[[6]])    
-        playagain()
-
-    elif choice.lower().strip() == "else":
-        print("Unfortunately that only eliminated 1 title.  Let's see if we can narrow it down some more. ")
-        #leveltwelve()
-
-def levelten():
+def levelnine():
     print(first_name, "So, you definitely want to stick with fantasy. And you are not interested in anything with romance as a focus.")
     choice = input("I have 5 fantasy titles that you can pick from, do you want to read an adult fantasy or a younger audience? [adult/younger] \n")
 
@@ -171,21 +157,23 @@ def levelten():
         
     elif choice.lower().strip() =="younger":
         print("There are still three titles to choose from. We need to narrow it down some more. ")
-        levelthirteen()
+        leveleleven()
        
-def leveleleven():
+def levelten():
     print(first_name, "You don't want fantasy or romance. That leaves four other genres to pick from. ")
     choice = input("Do you want to read nonfiction or fiction? [nonfiction/fiction] \n")
 
     if choice.lower().strip() == "nonfiction":
-        print("I have five titles that you can pick from. At this point, it might be easier to pick based on the audience. ")
+        print("There is only one nonfiction title that I have to recommend. If I am not mistaken, you read the first book and already have plans to read this one. ")
+
         
 
     elif choice.lower().strip() =="fiction":
         print("If you take away the romance and fantasy, that takes out 7 titles. ")
+        #leveltwelve()
       
 
-def levelthirteen():
+def leveleleven():
     print(first_name, "I guess now you have to decide if you want to read middle grade or young adult?")
     choice = input("Do you want to read something young adult or middle grade? [young/middle] \n")
 
