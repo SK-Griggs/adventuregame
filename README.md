@@ -18,8 +18,11 @@ Do you want to read nonfiction/fiction? [nonfiction/fiction]
 
  ## SYSTEM REQUIREMENTS FOR GAME:
  -A virtual environment 
+
  -python 3.9.6 (at least)
+ 
  -pandas
+ 
  -to start the game in your virtual environment type in [python adventure2.py] in the command line
 
 
