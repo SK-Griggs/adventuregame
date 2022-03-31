@@ -21,7 +21,7 @@ Do you want to read nonfiction/fiction? [nonfiction/fiction]
 
  -python 3.9.6 (at least)
  
- -pandas
+ -pandas [pip install]
  
  -to start the game in your virtual environment type in [python adventure2.py] in the command line
 
