@@ -26,7 +26,7 @@ Do you want to read nonfiction/fiction? [nonfiction/fiction]
  ### WHAT FEATURES CAN BE FOUND (AND WHERE)
 Cat 1. Implement a "master loop" console application where the user can repeatedly enter commands/perform actions, including choosing to exit the application.  (once the game begins it loops as long as you answer yes. entering no breaks the loop. misspelling words will also kick you out of the loop. )
 
-Bonus Cat. 1. Create and call at least 3 functions or methods, at least one of which must return a value that is used somewhere else in your code. (The entire game is a series of functions that are called based on the input entered. )
+Bonus Cat. 1. Create and call at least 3 functions or methods, at least one of which must return a value that is used somewhere else in your code. (The entire game is a series of functions that are called based on the input entered.)
 
 Cat 2. Utlize External Data- read dat from an external file and use that data in your application. (The titles are from a csv file and the game narrows the list down to 1-3 titles. )
 
