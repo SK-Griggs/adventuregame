@@ -21,9 +21,23 @@ Do you want to read nonfiction/fiction? [nonfiction/fiction]
 
  -python 3.9.6 (at least)
  
- -pandas [pip install]
+ -pandas 
  
- -to start the game in your virtual environment type in [python adventure2.py] in the command line
+
+
+ ## Instructions
+
+ 1. Clone the adventuregame repo:
+gh repo clone SK-Griggs/adventuregame
+
+2. Create a virtual environment (if you are not sure what python you have you can specify at this point.) Activate your virtua environment. 
+
+3. Type pip install pandas  in the command line. It will pause and wait for a y/n. Type Y and click enter. 
+
+
+4. To run the project/start the game type pythoon adventure2.py in the command line. Watch your spelling and HAVE FUN!!!
+
+
 
 
  ### WHAT FEATURES CAN BE FOUND (AND WHERE)
