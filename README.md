@@ -28,11 +28,11 @@ Do you want to read nonfiction/fiction? [nonfiction/fiction]
  ## Instructions
 
  1. Clone the adventuregame repo:
-gh repo clone SK-Griggs/adventuregame
+git clone https://github.com/SK-Griggs/adventuregame.git
 
 2. Create a virtual environment (if you are not sure what python you have you can specify at this point.) Activate your virtua environment. 
 
-3. Type pip install pandas  in the command line. It will pause and wait for a y/n. Type Y and click enter. 
+3. Type pip install -r requirements.txt in the command line. This will install the pandas that are required for the game. 
 
 
 4. To run the project/start the game type pythoon adventure2.py in the command line. Watch your spelling and HAVE FUN!!!
@@ -48,6 +48,8 @@ Bonus Cat. 1. Create and call at least 3 functions or methods, at least one of w
 Cat 2. Utlize External Data- read dat from an external file and use that data in your application. (The titles are from a csv file and the game narrows the list down to 1-3 titles. )
 
 Cat. 3 Data display -display data on a tabular form. Depending on what you choose at level three you can see the entire table of title choices.  As you narrow the list down, individual rows are displayed offering more information about the book title. 
+
+Cat. 4  The program should utilize a virtual environment and a document library dependencies in a requirements.txt file (pip install pandas -which is needed for the game- has been saved in the requirements.txt file. )
 
 
 
